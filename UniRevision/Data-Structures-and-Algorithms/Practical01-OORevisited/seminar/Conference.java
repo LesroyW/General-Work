@@ -42,7 +42,7 @@ public class Conference {
             	 Seminar seminar = new Seminar(attributes[0], 
             			 attributes[1], attributes[2], Integer.valueOf(attributes[3]));
              } else {
-            	 throw new BadDataFormatException();
+            	 throw new BadDataFormatException("Incorrect format of data" + file);
              }
 			
 			
