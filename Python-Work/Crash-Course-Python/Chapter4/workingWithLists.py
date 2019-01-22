@@ -44,3 +44,14 @@ for value in range(2,11):
 
 print(squares)
 #-------------------------------------------------------------------------------------------#
+#Basic statistics with a list of numbers
+print(max(squares)) #Max value from the list
+print(min(squares)) #Min value from the list
+print(sum(squares)) #Sum of all the values in the list
+#-------------------------------------------------------------------------------------------#
+
+#list Comprehension
+squareV2 = [value**2 for value in range(1,11)]
+print(squaresV2)
+#-------------------------------------------------------------------------------------------#
+#Working with part of a list
