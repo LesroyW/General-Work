@@ -71,3 +71,35 @@ if 'Apple' in favourite_fruit:
 if 'Banana' in favourite_fruit:
     print("You really like Bananas")
 #--------------------------------------------------------------------------------------------------------------------------#
+usernames = ['David', 'Sam', 'Admin', 'Jeff', 'Matt']
+if usernames:
+    for username in usernames:
+        if username == 'Admin':
+            print("Hello " + username + " , would you like to see a satuts report?")
+        else:
+            print("Hello " + username + " , welcome to the site")
+else:
+    print("WE NEED TO FIND SOME USERS")
+
+current_Users = ['David', 'Sam', 'Admin', 'Jeff', 'Matt']
+new_users = ['Clarie', 'jeff', 'Sandra', 'Mark', 'Matt']
+for new_user in new_users:
+    if new_user.title() in current_Users:
+        print("You will need a new username " + new_user)
+    else:
+        print("This username is available")
+#--------------------------------------------------------------------------------------------------------------------------#
+#Ordinal numbers
+numbers = [1, 5,6,7,8,3,9,4,2]
+numbers.sort()
+for number in numbers:
+    if number > 3:
+        print(str(number)+"th")
+    elif number == 3:
+        print(str(number)+"rd")
+    elif number == 2:
+        print(str(number)+"nd")
+    elif number == 1:
+        print(str(number)+"st")
+
+#--------------------------------------------------------------------------------------------------------------------------#
