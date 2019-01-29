@@ -50,3 +50,40 @@ favorite_languages = {    'jen': 'python',
        }
 print("Phils favorite programming language is " + favorite_languages['phil'].title() + ".")
 #--------------------------------------------------------------------------------------------------------------------------#
+#looping through a dictionary
+#looping through key and values
+for key, value in favorite_languages.items():
+    print(key + " : " + value)
+
+#looping through key
+for key in favorite_languages.keys():
+    print(key.title())
+
+#simipler way:
+for key in favorite_languages:
+    print(key.title())
+
+#Looping through with if statements
+
+friends = ['phil', 'sarah']
+for name in favorite_languages.keys():
+     print(name.title())
+     if name in friends:
+                print("  Hi " + name.title() + ", I see your favorite language is " +  favorite_languages[name].title() + "!")
+
+#CHecking if person is not list
+if 'Matt' not in favorite_languages.keys():
+    print("Please take our survey Matt")
+#prints keys in sorted order
+for key in sorted(favorite_languages.keys()):
+    print(key.title())
+
+#Looping through the values within a list
+for value in sorted(favorite_languages.values()):
+    print(value.title())
+
+#getting unique items if you wrap set around collection
+for value in sorted(set(favorite_languages.values())):
+
+    print("\t" + value.title())
+#--------------------------------------------------------------------------------------------------------------------------#
