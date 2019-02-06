@@ -30,3 +30,31 @@ if 'Congo River' not in rivers.keys():
 if 'Venice' not in rivers.values():
     print("HOW IS VENICE NOT HERE IT IS LITERALLY THE CITY OF RIVERS")
 #--------------------------------------------------------------------------------------------------------------------------#
+person1 = { 'dave' : 'male'}
+person2 = {'mark' :'male'}
+person3 = {'liz': 'female'}
+people = [person1,person2,person3]
+
+for person in people:
+    for key in person:
+        print(key + " " + person[key])
+
+places = {'Tokyo' : 'Lesroy' ,'Oslo' : 'Yusuf' ,'Toronto' : 'Dhillon'}
+for key in places:
+    print(places[key] + " favourite  place is " + key)
+
+places = {'Lesroy' : ['Tokyo', 'London' , 'Berlin'] , 'Yusuf' : ['Stockholm' , 'Helsinki', 'Oslo'] ,'Dhillon' : ['Toronto', 'New york', 'California'] }
+for key, place in places.items():
+    print(key + " favourite places are: " )
+    for place in places[key]:
+        print("\t" + place.title())
+
+cities = {'London' : {'Country' : 'UK', 'Language' : 'English'} ,
+'Barcalona': {'Country' : 'Spain' ,'Language' : 'Spanish'} ,
+'Paris' : {'Country' : 'France', 'Language' : 'French'} ,}
+print(cities)
+for key, city_details in cities.items():
+    print(key + " Details are:")
+    print("Country" + " : " + city_details['Country'])
+    print("Language" + " : " + city_details['Language'])
+#--------------------------------------------------------------------------------------------------------------------------#

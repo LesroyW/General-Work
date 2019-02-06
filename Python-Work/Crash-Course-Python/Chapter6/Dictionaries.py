@@ -116,5 +116,27 @@ for alien in aliens[::5]:
 for alien in aliens:
     print(alien)
 #--------------------------------------------------------------------------------------------------------------------------#
+#List within a dictionary
+pizza = { 'crust' : 'thick' , 'toppings' : ['cheese', 'tomato', 'pineapple']}
+print("You order a " + pizza['crust'] + " crust pizza " + " with the following toppings:")
+for value in pizza['toppings']:
+    print(value.title())
 
+languages = { 'Dave' : ['ruby', 'java'], 'Matt' : ['java', 'Python'],
+'Jen' : ['C#','Haskell'], }
+
+for name, languages in languages.items():
+    print(name.title() + " likes:")
+    for language in languages:
+        print("\t" + language.title())
+
+#--------------------------------------------------------------------------------------------------------------------------#
+#dictionary within a dictionary
+people = { 'dave' : {'Gender' : 'male','Age' : 22, 'Occupation' :"Programmer"}
+}
+print(people)
+for username, user_info in people.items():
+    print(username + user_info['Gender'])
+    fullDetails = username + " , " +user_info['Gender'] + " , " + str(user_info['Age'])+ " , " + user_info['Occupation']
+print(fullDetails)
 #--------------------------------------------------------------------------------------------------------------------------#
