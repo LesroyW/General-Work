@@ -87,3 +87,34 @@ for value in sorted(set(favorite_languages.values())):
 
     print("\t" + value.title())
 #--------------------------------------------------------------------------------------------------------------------------#
+#List of Dictionaries
+alien_0 = {'color' : 'red', 'points' : 4}
+alien_1 = {'color' : 'green', 'points' : 12}
+alien_2 = {'color' : 'blue','points' : 18}
+
+aliens = [alien_0, alien_1, alien_2]
+for alien in aliens:
+    for value in alien.values():
+        print(str(value))
+
+aliens = []
+
+for alien_number in range(30):
+     new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
+     aliens.append(new_alien)
+
+for alien in aliens[:10]:
+    print(alien)
+
+print("There are " + str(len(aliens)) + " aliens still alive." )
+
+for alien in aliens[::5]:
+    if alien['color'] == 'green':
+        alien['color'] = 'red'
+        alien['points'] = 30
+        alien['speed'] = 'fast'
+for alien in aliens:
+    print(alien)
+#--------------------------------------------------------------------------------------------------------------------------#
+
+#--------------------------------------------------------------------------------------------------------------------------#
