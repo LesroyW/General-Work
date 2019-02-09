@@ -17,4 +17,38 @@ if int(number) % 10 == 0:
     print(str(number) + "is a multiple of 10")
 else:
     print(str(number) + "is not a multiple of 10")
+
+prompt = "What are your favourite toppings: "
+
+toppingToPrint = ""
+while toppingToPrint != "Quit":
+    toppingToPrint = input(prompt)
+    if toppingToPrint != 'Quit':
+        print("I will add " + toppingToPrint)
+    else:
+        break
+
+prompt = "How old are you?"
+age = ""
+while age != 'Quit':
+    age = input(prompt)
+    if str(age) == "Quit":
+        break
+    if int(age) < 3:
+        print("Free of charge")
+    elif int(age) >= 3 and int(age)< 13:
+        print("£10 for ticket")
+    else:
+        print("£15 for ticket")
+
+prompt = "What are your favourite toppings: "
+
+toppingToPrint = ""
+active = True
+while active:
+    toppingToPrint = input(prompt)
+    if toppingToPrint == 'Quit':
+        active = False
+    else:
+        print("I will add " + toppingToPrint)
 #--------------------------------------------------------------------------------------------------------------------------#
