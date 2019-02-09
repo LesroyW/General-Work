@@ -33,3 +33,46 @@ if int(number) % 2 == 0:
 else:
     print(str(number) + " is odd")
 #--------------------------------------------------------------------------------------------------------------------------#
+#WHILE LOOPS
+
+current_number = 1
+while current_number <= 5:
+    print(current_number)
+    current_number += 1
+
+prompt = "Tell me something, and I will repeat it back to you: "
+prompt += "\nUntil you quit. "
+
+command = ""
+
+while command != "Quit":
+    command = input(prompt)
+    if command != "Quit":
+        print(command)
+
+prompt = "Tell me something, and I will repeat it back to you: "
+prompt += "\nUntil you quit. "
+test = ""
+#Addition of a flag
+active = True
+while active:
+    test = input(prompt)
+    if test == "Quit":
+        active = False
+    else:
+        print(test)
+#Using a break within the while Loop
+prompt = "Tell me something, about yourself: "
+prompt += "\nUntil you say 'quit'. "
+detail = ""
+
+active = True
+while active:
+    detail = input(prompt)
+    if detail == "Quit":
+        break
+    else:
+        print(detail)
+
+
+#--------------------------------------------------------------------------------------------------------------------------#
