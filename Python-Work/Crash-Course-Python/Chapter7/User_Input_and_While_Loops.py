@@ -82,3 +82,37 @@ while current_number < 10:
         continue
     print(current_number)
 #--------------------------------------------------------------------------------------------------------------------------#
+#Using Lists and Dicitionaries
+unconfirmed_users = [ 'Jerry', 'Lee', 'Mack']
+confirmed_users = []
+
+while unconfirmed_users:
+    current_user = unconfirmed_users.pop()
+    print(current_user.title() + " is being verified. Success")
+    confirmed_users.append(current_user)
+
+for user in confirmed_users:
+    print(user)
+
+#Removing instances of specific value
+numbers = [1,4,56,23,5,2,1,5,7,23,2,5,7,3,6]
+while 5 in numbers:
+    numbers.remove(5)
+print(numbers)
+
+#Filling a dictonary with user inputs
+responses = {}
+getting_Responses = True
+
+while getting_Responses:
+    name = input('what is your name?')
+    car = input('what is your favourite car?')
+    responses[name] = car
+    repeat = input("Would you like to add another name?")
+    if repeat == "no":
+        getting_Responses = False
+
+for name, response in responses.items():
+    print(name.title() + " would like to have a " + response.title() + " one day.")
+
+#--------------------------------------------------------------------------------------------------------------------------#
