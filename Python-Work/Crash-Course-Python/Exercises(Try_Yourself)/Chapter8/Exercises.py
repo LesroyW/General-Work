@@ -80,4 +80,32 @@ make_great(list_of_magicians[:], NewMagicians)
 show_magicians(NewMagicians)
 show_magicians(list_of_magicians)
 
+def sandwhiches_wanted(*fillings):
+    for filling in fillings:
+        print("You want " + filling + " in your sandwhich")
+sandwhiches_wanted("Milk", "Tomato")
+sandwhiches_wanted("Cheese")
+sandwhiches_wanted("Pork", "Beef", "Salom")
+
+def build_profile(first_name, last_name, **user_info):
+    profile = {}
+    profile['first_name'] = "Mark"
+    profile['last_name'] = "Sam"
+    for key, value in user_info.items():
+        profile[key] = value
+    return profile
+
+my_profile = build_profile("Lesroy", "Wedderburn", Age = "20", Height = "5'10")
+print(my_profile)
+
+def make_car(manufacturer, model_name, **car_info):
+    carInfo = {}
+    carInfo["manufacturer"] = manufacturer.title()
+    carInfo['model_name'] =model_name.title()
+    for key, value in car_info.items():
+        carInfo[key] = value
+    return carInfo
+
+newCar = make_car("Nissan", "Micra", Colour ="Blue", Lenght= "5 feet")
+print(newCar)
 #--------------------------------------------------------------------------------------------------------------------------#

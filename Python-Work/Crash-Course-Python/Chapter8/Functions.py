@@ -110,6 +110,44 @@ completed_Models_printed(completed_models)
 
 #def printModels(unprinted_designs[:], completed_models)
 #This would prevent the list being Modified and becoming empty and unusable
+#--------------------------------------------------------------------------------------------------------------------------#
+#Passing Arbitary Number of arguements
+def make_pizza(*toppings):
+    #This allows for multiple arguements to be given
+    print(toppings)
+make_pizza("Pepperoni")
+make_pizza("Cheese", "Ham", "Peppers")
+
+def make_pizza(*toppings):
+    for topping in toppings:
+        print("- " + topping)
+make_pizza("Pepperoni")
+make_pizza("Cheese", "Ham", "Peppers")
 
 
+#mixing Positinal and Arbitary arguements
+#Single parameter should come before the *parameters
+
+def make_pizza(size, *toppings):
+    print("making a " + str(size) + " sized pizza.")
+    for topping in toppings:
+        print("- " + topping)
+make_pizza(16, "Pepperoni")
+make_pizza(23, "Cheese", "Ham", "Chicken")
+
+def build_profile(first_name, last_name, **user_info):
+    profile = {}
+    profile['first_name'] = "Mark"
+    profile['last_name'] = "Sam"
+    for key, value in user_info.items():
+        profile[key] = value
+    return profile
+
+test_profile = build_profile("Sam", "Jeff", middle_name = "Karen", House_number = "50")
+print(test_profile)
+#--------------------------------------------------------------------------------------------------------------------------#
+#Styling functions
+#Function - default value should not have spaces inbetween equals symbol
+#Sperate functions by two blank lines so it easier to see where it has started
+#Import statements should be done at the start of the file.
 #--------------------------------------------------------------------------------------------------------------------------#
