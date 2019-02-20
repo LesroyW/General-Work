@@ -25,5 +25,58 @@ def describe_location(city, country="England"):
 describe_location("Birmingham")
 describe_location("Barcalona", "Spain")
 #Ignores default value
-#describe_location() this would produce an error as the function call is not containing the correct amount of parameters 
+#describe_location() this would produce an error as the function call is not containing the correct amount of parameters
+#--------------------------------------------------------------------------------------------------------------------------#
+#Return values
+def get_formatted_name(first_name, last_name):
+    """return a full name, neatly formatted."""
+    full_name = first_name + " " + last_name
+    return full_name.title()
+
+musician = get_formatted_name("Mark", "Daniels")
+print(musician)
+
+def get_formatted_name_with_middle_name(first_name, last_name, middle_name =''):
+    if middle_name:
+        full_name = first_name + " " + middle_name + " " + last_name
+    else:
+        full_name = first_name + " " + last_name
+    return full_name.title()
+
+musician = get_formatted_name_with_middle_name("Mark", "Daniels", "Samuel")
+print(musician)
+#--------------------------------------------------------------------------------------------------------------------------#
+#Returning a Dicitionary
+
+def build_person(first_name, last_name):
+    """Return a Dicitionary"""
+    person = {'first' : first_name, 'last' : last_name}
+    return person
+
+musician = build_person("Mark", "Samuel")
+print(musician)
+
+def build_person_with_age(first_name, last_name, age=""):
+    """Return a Dicitionary"""
+    person = {'first' : first_name, 'last' : last_name}
+    if age:
+        person['age'] = age
+    return person
+
+musician = build_person_with_age("Mark", "Samuel", '34')
+musicanB = build_person_with_age("Mark", "Ramuel")
+print(musician)
+print(musicanB)
+#--------------------------------------------------------------------------------------------------------------------------#
+#Using a function within a loop:
+while True:
+    print("Tell me your name?")
+    f_input = input("First name: ")
+    l_input = input("Last name: ")
+    toReturn = get_formatted_name(f_input, l_input)
+    print("Hello " + toReturn + "!")
+    q_input = input("Do you want to quit?")
+    if(q_input == "q"):
+        print("Ok Leaving....")
+        break
 #--------------------------------------------------------------------------------------------------------------------------#
