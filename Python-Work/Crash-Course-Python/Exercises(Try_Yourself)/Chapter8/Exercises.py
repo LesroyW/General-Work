@@ -60,3 +60,24 @@ while True:
     if(quit == "q"):
         break
 #--------------------------------------------------------------------------------------------------------------------------#
+def show_magicians(magicians):
+    for magician in magicians:
+        print(magician)
+
+list_of_magicians = ["Penn", "Teller", "David Blaine"]
+show_magicians(list_of_magicians)
+
+def make_great(magicians, NewMagicians):
+    for magician in range(0,len(magicians)):
+        current_Magician = magicians.pop()
+        current_Magician += " the Great"
+        NewMagicians.append(current_Magician)
+    return NewMagicians
+
+list_of_magicians = ["Penn", "Teller", "David Blaine"]
+NewMagicians = []
+make_great(list_of_magicians[:], NewMagicians)
+show_magicians(NewMagicians)
+show_magicians(list_of_magicians)
+
+#--------------------------------------------------------------------------------------------------------------------------#

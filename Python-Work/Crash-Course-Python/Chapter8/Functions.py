@@ -80,3 +80,36 @@ while True:
         print("Ok Leaving....")
         break
 #--------------------------------------------------------------------------------------------------------------------------#
+#Passing a Lists
+
+def greet_users(names):
+    for name in names:
+        print("Hello " + name.title() + " nice to meet you!")
+
+usernames = ["Mark", "jeff", "sam"]
+greet_users(usernames)
+
+#Modifying a Lists
+
+
+def printModels(unprinted_designs, completed_models):
+    while unprinted_designs:
+        current_design = unprinted_designs.pop()
+        print("Currently printing " + current_design)
+        completed_models.append(current_design)
+
+def completed_Models_printed(completed_models):
+    for completed_model in completed_models:
+        print(completed_model + " has been completed.")
+
+unprinted_designs = ["Crab", "Hook", "Mask"]
+completed_models = []
+
+printModels(unprinted_designs, completed_models)
+completed_Models_printed(completed_models)
+
+#def printModels(unprinted_designs[:], completed_models)
+#This would prevent the list being Modified and becoming empty and unusable
+
+
+#--------------------------------------------------------------------------------------------------------------------------#
