@@ -22,3 +22,12 @@ my_dog = Dog("Sam", 2)
 my_dog.sit()
 print(my_dog.name.title() + " is " + str(my_dog.age) + " years old.")
 #--------------------------------------------------------------------------------------------------------------------------#
+#Calling multiple instances
+my_dog = Dog('willie', 6)
+your_dog = Dog('lucy', 3)
+print("My dog's name is " + my_dog.name.title() + ".")
+print("My dog is " + str(my_dog.age) + " years old.") my_dog.sit()
+print("\nYour dog's name is " + your_dog.name.title() + ".")
+print("Your dog is " + str(your_dog.age) + " years old.") your_dog.sit()
+
+#--------------------------------------------------------------------------------------------------------------------------#
