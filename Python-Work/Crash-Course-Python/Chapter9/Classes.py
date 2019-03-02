@@ -48,18 +48,22 @@ class Car():
          return long_name.title()
 #Modifying an attributes value
      def update_odometer(self, miles):
-         if miles < self.odometer_reading:
+         if miles < self.odometer_reading or miles < 0:
              print("You can't roll back the miles buddy")
          else:
              self.odometer_reading = miles
 #Incrementing an attributes value through a method
+     def increment_odometer(self, miles):
+         self.odometer_reading += miles
 
 my_new_car = Car("Ferrari", "Spider", 2009)
 print(my_new_car.describe_car())
 my_new_car.read_odometer()
 my_new_car.update_odometer(6)
 my_new_car.read_odometer()
-my_new_car.update_odometer(2)
+my_new_car.update_odometer(-2)
+my_new_car.increment_odometer(400)
+my_new_car.read_odometer()
 
 
 #--------------------------------------------------------------------------------------------------------------------------#
