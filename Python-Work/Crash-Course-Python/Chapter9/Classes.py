@@ -121,5 +121,7 @@ my_bmw = ElectricCarv2("BMW", "electricbwm", 2020)
 my_bmw.battery_size.describe_battery()
 my_bmw.battery_size.get_range()
 #--------------------------------------------------------------------------------------------------------------------------#
-#Importing Classes
+#Python Standard Library
+# Can keep track of the order in which key-value paris are added can use OrderdedDict from collections
+# example: from collections import OrderdedDict
 #--------------------------------------------------------------------------------------------------------------------------#
