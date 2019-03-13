@@ -1,0 +1,5 @@
+During this time I have learned many things about python:
+- Classes
+- Variables
+- Loops
+and many more
