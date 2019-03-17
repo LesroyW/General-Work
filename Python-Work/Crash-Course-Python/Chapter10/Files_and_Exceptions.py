@@ -68,3 +68,13 @@ with open(filename, "a") as file_object:
     file_object.write("1st step.\n")
     file_object.write("2nd step.")
 #--------------------------------------------------------------------------------------------------------------------------#
+#Handling ZeroDivisionError
+#Python throws error when trying to divide by 0
+#e.g print(5/0)
+#To resolve this use try/except blocks
+
+try:
+    print(5/0)
+except ZeroDivisionError:
+    print("You can't divide by zero!")
+#--------------------------------------------------------------------------------------------------------------------------#
