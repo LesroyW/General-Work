@@ -77,4 +77,46 @@ try:
     print(5/0)
 except ZeroDivisionError:
     print("You can't divide by zero!")
+#Page 201
+
+print("Give me two numbers, and I'll divide them")
+print("Enter 'q' to quit")
+
+first_number = input("\n The first number is: ")
+if first_number == 'q':
+    first_number = 0
+second_number = input("\n The second number is: ")
+    #use of exception
+try:
+    answer = int(first_number)/int(second_number)
+except ZeroDivisionError:
+    print("This is not a valid calculation")
+else:
+    print(answer)
+#--------------------------------------------------------------------------------------------------------------------------#
+#File exceptions
+filename = "Alice.txt"
+try:
+    with open(filename) as f_obj:
+        contents = f_obj.read()
+except FileNotFoundError:
+    msg = filename + " cannot be found please try again!"
+    print(msg)
+#--------------------------------------------------------------------------------------------------------------------------#
+#Analysing text
+title = "AliceInWonderland.txt"
+print(title.split())
+
+def count_words(filename):
+    try:
+        with open(filename) as f_obj:
+            contents = f_obj.read()
+    except FileNotFoundError:
+            msg = filename + " cannot be found please try again!"
+            print(msg)
+    else:
+        words = contents.split()
+        print("This file contains " + str(len(words)) + " within it.")
+
+count_words(title)
 #--------------------------------------------------------------------------------------------------------------------------#
