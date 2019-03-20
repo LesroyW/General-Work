@@ -105,7 +105,6 @@ except FileNotFoundError:
 #--------------------------------------------------------------------------------------------------------------------------#
 #Analysing text
 title = "AliceInWonderland.txt"
-print(title.split())
 
 def count_words(filename):
     try:
@@ -118,5 +117,7 @@ def count_words(filename):
         words = contents.split()
         print("This file contains " + str(len(words)) + " within it.")
 
-count_words(title)
+list = [title, "ThreeMusketers.txt", 'MissingFile.txt']
+for name in list:
+    count_words(name)
 #--------------------------------------------------------------------------------------------------------------------------#
