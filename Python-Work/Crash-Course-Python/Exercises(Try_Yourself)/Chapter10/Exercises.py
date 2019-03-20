@@ -45,9 +45,18 @@ def read_File(filename):
             contents = f_obj.read()
             print(contents)
     except FileNotFoundError:
-        print("Cannot find " + filename + " in this directory")
+        pass
 
 files = ["cats.txt", "dogs.txt"]
 for file in files:
     read_File(file)
+
+filename = "FileReading.txt"
+enc = "utf-8"
+try:
+    with open(filename, 'r', encoding=enc) as file_object:
+        contents = file_object.read()
+        print(contents.lower().count("the"))
+except FileNotFoundError:
+    print("This file isn't found matey")
 #--------------------------------------------------------------------------------------------------------------------------#
