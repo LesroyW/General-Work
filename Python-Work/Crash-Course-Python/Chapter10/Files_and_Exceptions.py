@@ -121,3 +121,18 @@ list = [title, "ThreeMusketers.txt", 'MissingFile.txt']
 for name in list:
     count_words(name)
 #--------------------------------------------------------------------------------------------------------------------------#
+#Failing Silently
+def count_words(filename):
+    try:
+        with open(filename) as f_obj:
+            contents = f_obj.read()
+    except FileNotFoundError:
+            pass
+            #When error is rasied pass makes it so no traceback is produced, no output of error
+    else:
+        words = contents.split()
+        print("This file contains " + str(len(words)) + " within it.")
+#--------------------------------------------------------------------------------------------------------------------------#
+#Choosing errors to report
+#Well written code will prevent internal errors but will still need to take into consideration potential errors
+#--------------------------------------------------------------------------------------------------------------------------#
