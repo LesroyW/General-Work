@@ -135,4 +135,5 @@ def count_words(filename):
 #--------------------------------------------------------------------------------------------------------------------------#
 #Choosing errors to report
 #Well written code will prevent internal errors but will still need to take into consideration potential errors
+
 #--------------------------------------------------------------------------------------------------------------------------#
