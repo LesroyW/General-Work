@@ -5,7 +5,9 @@ import json
 def greet_user():
 
     username = get_stored_username()
-    if username:
+    outcome = input("Is " +username + " your username?")
+
+    if outcome == "Yes":
         print("Welcome back, " + username + "!")
     else:
         username = get_new_username()
