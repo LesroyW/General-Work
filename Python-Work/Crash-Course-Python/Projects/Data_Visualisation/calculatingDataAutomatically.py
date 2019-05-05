@@ -7,7 +7,7 @@ x_values = list(range(1,100))
 y_values = [x**2 for x in x_values]
 
 #Produces a scatter graph
-plt.scatter(x_values, y_values, s=40)
+plt.scatter(x_values, y_values, s=40, edgecolors="none", c=y_values, cmap=plt.cm.Blues)
 plt.title("Auto Squares")
 plt.xlabel("Value",fontsize=12)
 plt.ylabel("Squares of Values", fontsize=12)
@@ -15,4 +15,4 @@ plt.ylabel("Squares of Values", fontsize=12)
 plt.axis([0,100, 0,10000])
 
 #Shows the graph
-plt.show()
+plt.savefig("square_plot.png", bbox_inches="tight")
