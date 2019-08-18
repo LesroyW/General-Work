@@ -45,4 +45,4 @@ plt.ylabel("Temperature(F)", fontsize= 16)
 plt.tick_params(axis="both", which='minor', labelsize =16)
 plt.show()
 
-#Page 388
+#Page 395
