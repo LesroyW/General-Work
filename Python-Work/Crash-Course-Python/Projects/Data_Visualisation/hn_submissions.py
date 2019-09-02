@@ -1,16 +1,18 @@
 import requests
 from operator import itemgetter
 
+
 url = 'https://hacker-news.firebaseio.com/v0/topstories.json'
 r = requests.get(url)
-print('Status Code:', r.status_code)
-
 submissions_ids = r.json()
+
+def returnStatusCode():
+    return r.status_code
+
 submission_dicts = []
 for submission_id in submissions_ids[:30]:
     url = ('https://hacker-news.firebaseio.com/v0/item/' + str(submission_id) + '.json' )
     submission_r = requests.get(url)
-    print(submission_r.status_code)
     reponse_dict = submission_r.json()
 
     submission_dict = {
@@ -27,3 +29,5 @@ for submission_dict in submission_dicts:
     print("Discussion link:", submission_dict['link'])
     print("Comments:", submission_dict['comments'])
     
+def returnDictLen():
+    return len(submission_dicts)
