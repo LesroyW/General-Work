@@ -304,6 +304,9 @@ public class linkedListExercises {
 //		head.next.next.next = head2.next.next;
 //		head.next.next.next.next = head2.next;
 //		head2.next = null;
+		
+		
+		//Would need to change to a while loop if size of linkedlist was unknown.
 	}
 
 	public static void main(String[] args) {

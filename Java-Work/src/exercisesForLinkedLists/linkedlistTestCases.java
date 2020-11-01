@@ -12,6 +12,12 @@ class linkedlistTestCases {
 		
 	
 	@Test
+	void testcase1()
+	{
+		assertEquals(null, problemStatement.removeLetter(null));
+	}
+	
+	@Test
 	void testcase2() {
 		
 		Node A = new Node('A', null);
@@ -21,7 +27,7 @@ class linkedlistTestCases {
 		A.next.next.next.next = new Node('E', null);
 		A.next.next.next.next.next = new Node('F', null);
 		
-		assertEquals("hBCDEF", problemStatement.removeLetter(A));
+		assertEquals("BCDEF", problemStatement.removeLetter(A));
 	}
 	
 	@Test
@@ -34,7 +40,7 @@ class linkedlistTestCases {
 		A.next.next.next.next = new Node('B', null);
 		A.next.next.next.next.next = new Node('A', null);
 		
-		assertEquals("hFEDCB", problemStatement.removeLetter(A));
+		assertEquals("FEDCB", problemStatement.removeLetter(A));
 	}
 	
 	@Test
@@ -47,7 +53,7 @@ class linkedlistTestCases {
 		A.next.next.next.next = new Node('C', null);
 		A.next.next.next.next.next = new Node('D', null);
 		
-		assertEquals("hBCD", problemStatement.removeLetter(A));
+		assertEquals("BCD", problemStatement.removeLetter(A));
 	}
 	
 	@Test
@@ -60,7 +66,15 @@ class linkedlistTestCases {
 		A.next.next.next.next = new Node('A', null);
 		A.next.next.next.next.next = new Node('A', null);
 		
-		assertEquals("hDCB", problemStatement.removeLetter(A));
+		assertEquals("DCB", problemStatement.removeLetter(A));
+	}
+	
+	@Test
+	void testcase6()
+	{
+		Node A = new Node('A', null);
+		
+		assertEquals(null, problemStatement.removeLetter(A));
 	}
 	
 	@Test
@@ -87,7 +101,7 @@ class linkedlistTestCases {
 		A.next.next.next.next = new Node('F', null);
 		A.next.next.next.next.next = new Node('G', null);
 		
-		assertEquals("hBCDEFG", problemStatement.removeLetter(A));
+		assertEquals("BCDEFG", problemStatement.removeLetter(A));
 	}
 	
 	@Test
@@ -100,7 +114,7 @@ class linkedlistTestCases {
 		A.next.next.next.next = new Node('C', null);
 		A.next.next.next.next.next = new Node('A', null);
 		
-		assertEquals("hBC", problemStatement.removeLetter(A));
+		assertEquals("BC", problemStatement.removeLetter(A));
 	}
 
 }
