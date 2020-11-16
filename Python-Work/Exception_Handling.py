@@ -1,0 +1,1 @@
+#Similar to Java in terms of doing try catch bu uses try: and except:
