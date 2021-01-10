@@ -1,6 +1,6 @@
 import sys
 
-f = open("C:\\Users\\Wlesr\\OneDrive\\Documents\\General-Work\\AdventOfCode2020\\Day8\\Day8Input.txt" , "r")
+f = open("Day8Input.txt" , "r")
 
 lines = []
 

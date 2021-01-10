@@ -1,6 +1,6 @@
 import re
 
-f = open("C:\\Users\\Wlesr\\OneDrive\\Documents\\General-Work\\AdventOfCode2020\\Day6\\Day6Input.txt", "r")
+f = open("Day6Input.txt", "r")
 
 sumofCounts = 0
 sumofEveryone = 0

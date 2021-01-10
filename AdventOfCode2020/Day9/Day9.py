@@ -1,7 +1,7 @@
 from itertools import combinations
 import sys
 
-f = open("C:\\Users\\Wlesr\\OneDrive\\Documents\\General-Work\\AdventOfCode2020\\Day9\\Day9Input.txt", 'r')
+f = open("Day9Input.txt", 'r')
 
 queueOfNumbers = []
 validNumber = []

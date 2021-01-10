@@ -1,4 +1,4 @@
-f = open('C:\\Users\\Wlesr\\OneDrive\\Documents\\General-Work\\AdventOfCode2020\\Day12\\Day12Input.txt','r')
+f = open('Day12Input.txt','r')
 
 
 

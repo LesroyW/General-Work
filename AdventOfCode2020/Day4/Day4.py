@@ -1,7 +1,7 @@
 import re
 
 
-f = open("C:\\Users\\Wlesr\\OneDrive\\Documents\\General-Work\\AdventOfCode2020\\Day4\\test.txt" , 'r')
+f = open("test.txt" , 'r')
 
 requirements = ["ecl:", "pid:", "eyr:" ,"hcl:", "byr:", "iyr:", "hgt:"]
 valid = 0

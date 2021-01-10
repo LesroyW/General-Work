@@ -1,5 +1,5 @@
 import sys
-f = open("C:\\Users\\Wlesr\\OneDrive\\Documents\\General-Work\\AdventOfCode2020\\Day11\\Day11Input.txt", 'r')
+f = open("Day11Input.txt", 'r')
 
 SeatAllocationArray = []
 SeatLine = f.readlines()

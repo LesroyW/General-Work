@@ -1,4 +1,4 @@
-f = open('C:\\Users\\Wlesr\\OneDrive\\Documents\\General-Work\\AdventOfCode2020\\Day10\\Day10Input.txt', 'r')
+f = open('Day10Input.txt', 'r')
 
 lines = f.readlines()
 processedlines = []

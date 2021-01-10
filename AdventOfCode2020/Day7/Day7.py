@@ -1,4 +1,4 @@
-f = open("C:\\Users\\Wlesr\\OneDrive\\Documents\\General-Work\\AdventOfCode2020\\Day7\\Day7InputTest.txt", 'r')
+f = open("Day7InputTest.txt", 'r')
 
 class Node(object):
     def __init__(self, data):

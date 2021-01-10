@@ -1,4 +1,4 @@
-f = open("C:\\Users\\Wlesr\\OneDrive\\Documents\\General-Work\\AdventOfCode2020\\Day3\\Day3Input.txt", 'r')
+f = open("Day3Input.txt", 'r')
 
 Slopes = []
 

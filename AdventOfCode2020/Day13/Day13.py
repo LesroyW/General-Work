@@ -1,4 +1,4 @@
-f = open('C:\\Users\\Wlesr\\OneDrive\\Documents\\General-Work\\AdventOfCode2020\\Day13\\Day13Input.txt' , 'r')
+f = open('Day13Input.txt' , 'r')
 
 lines = f.readlines()
 timestamp = int(lines[0])

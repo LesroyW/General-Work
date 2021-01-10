@@ -1,4 +1,4 @@
-f = open("C:\\Users\\Wlesr\\OneDrive\\Documents\\General-Work\\AdventOfCode2020\\Day5\\Day5Input.txt",'r')
+f = open("Day5Input.txt",'r')
 
 
 maxpoint = 0

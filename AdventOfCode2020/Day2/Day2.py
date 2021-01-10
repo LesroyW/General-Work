@@ -1,4 +1,4 @@
-f = open("C:\\Users\\Wlesr\\OneDrive\\Documents\\General-Work\\AdventOfCode2020\\Day2\\Day2input.txt", 'r')
+f = open("Day2input.txt", 'r')
 
 passwords = []
 minAndMax = []
